@@ -1,0 +1,290 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #8cc461;
+}
+
+.main > .scoreBoard {
+  margin: 20px 25%;
+  width: 50%;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid #fff;
+  position: absolute;
+  border-radius: 10px;
+}
+
+.main > .scoreBoard > .name {
+  width: 10%;
+  font-family: Robot;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.main > .scoreBoard > .scoreBox > .box {
+  width: 40%;
+  background-color: #fff;
+  color: #000;
+  margin: 0 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.main > .scoreBoard > .scoreBox {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main > .scoreBoard > .scoreBox > .box > p {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+}
+
+.main > .scoreBoard > .scoreBox > .box > h1 {
+  font-family: Roboto;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main > #gameCard {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+}
+
+.main > #gameCard > .line {
+  width: 10px;
+  height: 100px;
+  background-color: #000000a8;
+  position: absolute;
+}
+
+.main > #gameCard > .line1 {
+  right: 50px;
+  top: 30px;
+  height: 210px;
+  transform: rotate(-32deg);
+  transform-origin: 0px;
+}
+
+.main > #gameCard > .line2 {
+  left: 110px;
+  top: 50px;
+  height: 210px;
+  transform: rotate(30deg);
+  transform-origin: 0px;
+}
+
+.main > #gameCard > .line3 {
+  bottom: -153px;
+  height: 220px;
+  left: 40px;
+  transform: rotate(90deg);
+  transform-origin: 0px;
+  z-index: 1;
+}
+
+.main > #gameCard > .rock {
+  position: absolute;
+  right: 50px;
+  border: 10px solid #0074b6;
+  z-index: 2;
+}
+
+.main > #gameCard .rock,
+.scissor,
+.paper {
+  padding: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.main > #gameCard > div > img {
+  width: 60px;
+  height: 55px;
+}
+
+.main > #gameCard > .scissor {
+  position: absolute;
+  left: 135px;
+  border: 10px solid #bd00ff;
+  z-index: 2;
+}
+
+.main > #gameCard > .paper {
+  position: absolute;
+  top: 200px;
+  left: -15px;
+  border: 10px solid #ffa943;
+}
+
+.play {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  position: absolute;
+  top: 60%;
+  left: 26%;
+  display: none;
+}
+
+.play > div > img {
+  padding: 20px;
+  height: 120px;
+  width: 120px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 10px solid rgb(204, 100, 100);
+}
+
+.play > #text {
+  margin-top: 30px;
+}
+.play > #text h2,
+h3 {
+  font-family: Roboto;
+  font-size: 39px;
+  font-weight: 1000;
+  line-height: 46px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.play > #text h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.play > #text button {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  margin: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+}
+
+.play > #text a {
+  text-decoration: none;
+}
+
+.play > #text #next {
+  display: none;
+}
+
+.play > .icon > p {
+  font-family: Roboto;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.rules {
+  width: 20%;
+  position: absolute;
+  right: 30px;
+  bottom: 80px;
+}
+
+.rules > #rulesBox {
+  width: 100%;
+  height: 50vh;
+  padding: 20px;
+  border: 5px solid #fff;
+  background-color: #004429;
+  border-radius: 10px;
+  display: none;
+}
+
+.rules > #rulesBox > h1 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  font-family: Roboto;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.rules > #rulesBox > ul > li {
+  font-size: 12px;
+  color: #fff;
+  font-family: Roboto;
+  line-height: 20px;
+  margin-bottom: 5px;
+  letter-spacing: 0.5px;
+  margin-left: 10px;
+  list-style-type: square;
+  color: #ffd600;
+}
+
+.rules > #rulesBox > ul > #closeIcon {
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  height: 35px;
+  width: 35px;
+  background-color: red;
+  border: 2px solid #fff;
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 25px;
+  font-family: Roboto;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.rules > .sideButtons {
+  position: absolute;
+  bottom: -60px;
+  right: -15px;
+}
+
+.rules > .sideButtons button {
+  padding: 5px 30px;
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: Roboto;
+  text-align: center;
+  background: transparent;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+
+.rules > .sideButtons #next {
+  display: none;
+}
